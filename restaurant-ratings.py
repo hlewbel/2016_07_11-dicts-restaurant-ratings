@@ -19,6 +19,16 @@ for line in input_file:
 # put each pair in dictionary then alphabetize
     all_restaurant_reviews[restaurant_review[0]]= restaurant_review[1]
 
+# ask user for additional input
+
+print "Please enter a new restaurant  and rating (ie: Buck's 3): "
+user_input = raw_input()
+user_input = user_input.split(" ")
+all_restaurant_reviews[user_input[0]]= user_input[1]
+print
+
+
+
 #alphabetize - sorts by default on the keys, sorted returns a list
 #print sorted(all_restaurant_reviews)
 sorted_all_restaurant_reviews = sorted(all_restaurant_reviews)
